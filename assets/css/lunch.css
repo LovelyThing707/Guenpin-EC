@@ -1,0 +1,187 @@
+section.courses{
+    margin-bottom: 75px;
+}
+section.courses:first-child{
+    margin-bottom: 87px;
+}
+
+section.courses .course:last-child{
+    margin-bottom: 0px;
+}
+section.courses .boxed-width{
+    align-items: start;
+    justify-content: end;
+}
+section.courses .boxed-width > .heading{
+    margin-top: 23px;
+    margin-right: auto;
+}
+section.courses .boxed-width > .heading h1{
+    width: 50px;
+    margin-top: -30px;
+}
+/* section.courses .courses-wrapper{
+    gap: 60px;
+} */
+section.courses .courses-wrapper .course-meal-name h2{
+    margin: 0px;
+    text-align: start;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 21px;
+    margin-bottom: 9px;
+}
+section.courses .course{
+    align-items: start;
+    padding: 23px 28px 26px 21px;
+    gap: 31px;
+    background-color: var(--white);
+    margin-bottom: 60px;
+    /* align-items:stretch */
+}
+
+
+section.courses .course .details{
+    width: 100%;
+    height: 100%;
+    min-height: 544px;
+    max-width: 566px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+
+}
+section.courses .course figure{
+    width: fit-content;
+    height: fit-content;
+    box-sizing: border-box;
+    display: flex;
+}
+section.courses .course figure img{
+    /* width: 100%;
+    height: 100%; */
+    height: 544px;
+    width: 544px;
+    max-height: 544px;
+    max-width: 544px;
+    aspect-ratio: 1/1;
+}
+section.courses .course .details .name{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    border-bottom: 1px solid black;
+    position: relative;
+    padding-bottom: 12px;
+}
+section.courses .course .details .name h2, section.courses .course .details .name span{
+    font-size: 28px;
+    margin: 0px;
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+
+}
+section.courses .course .details .durationxprice{
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 9px;
+}
+section.courses .course .details .desc p{
+    margin: 0px;
+    margin: 14px 0px 25px 0px ;
+    line-height: 24px;
+}
+section.courses .course .menu-details{
+    height: fit-content;
+    width: auto;
+    background-image: url('/assets/media/rustled-pape-white.webp');
+    background-repeat: repeat;
+    background-size: 100%;
+    align-items: start;
+    justify-content: space-between;
+    padding: 10px 21px 14px 30px;
+    margin-top: auto
+}
+section.courses .course .menu-details .heading{
+    font-size: 20px;
+    line-height: 24px;
+    width: 26px;
+}
+section.courses .course .menu-details .menu-dishes{
+    width: 100%;
+    height: fit-content;
+    max-width: 444px;
+}
+section.courses .course .menu-details .menu-dishes p{
+    margin-top: 0px;
+    margin-bottom: 15px;
+    line-height: 29px;
+}
+section.courses .course .menu-details .menu-dishes p:nth-child(2){
+    margin-bottom: 61px;
+}
+section.courses .course .menu-details .menu-dishes .nav-text{
+    display: flex;
+    height: 25px;
+    margin-left: auto;
+    width: fit-content;
+    min-width: 92px;
+    text-align: start;
+    position: relative;
+    /* padding-right: 30px */
+}
+/* section.courses .course .menu-details .menu-dishes .nav-text::before{
+    content: '＞';
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    display: flex;
+    position: absolute;
+    left: -36px;
+    top: 2px;
+    align-items: center;
+    justify-content: center;
+    color: var(--default-text);
+    border: 1px solid rgba(68, 68, 68, 1);
+    border-radius: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    transform: rotate(-90deg);
+} */
+
+section.courses .course .menu-details .menu-dishes .more-details{
+    height: 0px;
+    overflow: clip;
+    transition: height .4s ease-in-out 0s;
+}
+section.courses .course .menu-details .menu-dishes .more-details p{
+    margin-bottom: 0px;
+}
+section.courses .course .menu-details .menu-dishes p:nth-child(2){
+    margin-bottom: 61px;
+}
+
+section.courses .course .menu-details .menu-dishes .nav-text{
+    display: flex;
+    height: 25px;
+    margin-left: auto;
+    margin-top: 15px;
+    width: fit-content;
+    min-width: 92px;
+    text-align: start;
+    position: relative;
+    /* padding-right: 30px */
+    cursor: pointer;
+    transition: opacity .2s ease-in-out 0s, width .4s ease-in-out 0s,;
+}
+section.courses .course .menu-details .menu-dishes .nav-text:hover{
+    opacity: .5;
+    transition: opacity .2s ease-in-out 0s;
+}
+
+
+

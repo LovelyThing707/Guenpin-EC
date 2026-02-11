@@ -1,0 +1,796 @@
+header{
+    width: 100%;
+    height: auto;
+    padding-top: 17px;
+    padding-bottom: 15px;
+
+    background-repeat: repeat;
+    background-image: url('/assets/media/rustled-pape-brown.webp');
+    position: fixed;
+    top: 0;
+    z-index: 20;
+}
+header .boxed-width{
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 22px;
+    padding-right: 22px;
+    box-sizing: border-box;
+    position: relative;
+}
+header a.logo {
+    width: fit-content;
+    height: 47px;
+    gap: 16px;
+    align-items: center;
+    margin-right: 57px;
+}
+header a.logo figure{
+    width: 46px;
+    height: 47px;
+}
+header a.logo .h1{
+    font-size: 24px;
+}
+
+
+header a.logo {
+    width: fit-content;
+    height: 47px;
+    gap: 16px;
+    align-items: center;
+    margin-right: 57px;
+}
+header a.logo figure{
+    width: 46px;
+    height: 47px;
+}
+header a.logo .h1{
+    font-size: 24px;
+}
+
+
+header menu{
+    width: fit-content;
+    height: auto;
+    margin-right: 10px;
+}
+header menu nav{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    gap: 24px;
+}
+header menu nav li{
+    width: fit-content;
+    height: auto;
+    display: inline-flex;
+    
+}
+header menu nav li a{
+    transition: all .2s ease-in-out 0s;
+}
+header menu nav li a:hover{
+    opacity: .5;
+    transition: all .2s ease-in-out 0s;
+}
+header menu nav li:last-child{
+    width: fit-content;
+    display: inline-flex;
+    flex-direction: row;
+    position: relative;
+    gap: 2px;
+    /* background-color: red; */
+}
+
+header menu nav li:last-child a:first-child{
+    flex-shrink: 0;
+}
+header menu nav li:last-child span{
+    width: fit-content;
+    height: fit-content;
+    display: inline-flex;
+    position: relative;
+    /* margin-bottom: 5px; */
+    /* transform: rotate(90deg); */
+    font-size: 18px;
+    bottom: 0px;
+}
+/* header menu nav li:last-child a:last-child:hover{
+    opacity: .5;
+    transition: all .2s ease-in-out 0s;
+} */
+header menu nav li:last-child a:last-child{
+    opacity: 0;
+    height: 40px;
+    /* pointer-events: none; */
+    visibility: hidden;
+    width: max-content;
+    position: absolute;
+    top: 30px;
+    flex-shrink: 0;
+    transition: all .4s ease-in-out 1s;
+}
+
+header menu nav li:last-child:hover a:last-child{
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transition: all .4s ease-in-out 0s;
+    align-items: center;
+}
+header .language-toggle{
+    height: 25px;
+    align-items: center;
+    width: fit-content;
+    gap: 6px;
+    cursor: pointer;
+}
+header .language-toggle figure img{
+    mix-blend-mode: multiply;
+    width: 14px;
+    height: 18px;
+}
+header .language-toggle span{
+    font-size: 14px;
+    line-height: 100%;
+}
+header button.btn-cta{
+    padding: 13px 33px 16px 34px;
+    /* margin-right: 53px; */
+}
+header button.btn-cta a{
+    display: inline-flex;
+    height: 40px;
+    align-items: center;
+    line-height: 100%;
+    
+    /* background-color: red; */
+}
+header figure.hamburger-nav-icon{
+    cursor: pointer;
+    height: 20px;
+    width: 30px;
+    display: none;
+    box-sizing: border-box;
+}
+header figure.hamburger-nav-icon img{
+    width: 100%;
+    height: 100%;
+}
+header .breadcrumbs-text{
+    width: 100%;
+    height: fit-content;
+    padding-top: 24px;
+    transition: all .6s ease-in-out 0s;
+}
+header .breadcrumbs-text span{
+    display: inline-flex;
+    height: 28px;
+    align-items: center ;
+}
+
+header .mobile-menu{
+    position: absolute;
+    width: 100%;
+    height: 100vh;;
+    /* min-height: 1 */
+    top: 0;
+    background-image: url('/assets/media/rustled-pape-white.webp');
+    background-repeat: repeat;
+    background-size: 100%;
+    padding-top: 24px;
+    box-sizing: border-box;
+    transition: .4s ease-out 0s;
+    
+}
+header .mobile-menu .menu-wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    padding-bottom: 60px;
+}
+header .mobile-menu.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: .4s ease-in 0s ;
+}
+header .mobile-menu.is-visible{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: .4s ease-out 0s ;
+    z-index: 50;
+}
+
+header .mobile-menu .col-1, header .mobile-menu .col-2, header .mobile-menu .col-3{
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+}
+header .mobile-menu .col-1{
+    justify-content: space-between;
+    padding: 0px 9px 0px 16px;
+    box-sizing: border-box;
+    gap: 17px;
+    margin-bottom: 28px;
+}
+header .mobile-menu div.logo {
+    margin: 0px;
+    margin-right: auto;
+    gap: 20px
+}
+header .mobile-menu div.logo figure{
+    width: 43px;
+    height: 43px;
+}
+header .mobile-menu .col-1 svg{
+    left: 5px;
+    /* padding: 5px 0px 0px 30px; */
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    width: 21px;
+    height: 21px;
+    transition: transform .3s ease 0s;
+}
+header .mobile-menu.is-hidden .col-1 svg{
+    transform: rotate(180deg);
+    transition: transform .3s ease 0s;
+}
+
+header .mobile-menu .col-2 {
+    display: block;
+    margin-bottom: 35px;
+}
+header .mobile-menu .col-2, header .mobile-menu .col-2 nav{
+    width: 100%;
+}
+header .mobile-menu .col-2 nav{
+    gap: 10px;
+}
+header .mobile-menu .col-2 li{
+    width: 100%;
+    border-bottom: 1px solid rgba(217, 217, 217, 1);
+    padding-bottom: 18px;
+    padding-left: 16px;
+    box-sizing: border-box;
+}
+header .mobile-menu .col-2 li a{
+    line-height: 32px;;
+}
+header .mobile-menu .col-2 nav .language-toggle{
+    align-items: center;
+    display: flex;
+}
+header .mobile-menu .col-2 nav .language-toggle span{
+    font-size: 16px;
+    line-height: 32px;
+}
+header .mobile-menu .col-2 nav .language-toggle figure{
+    width: 20px;
+    height: 20px;
+    opacity: .4;
+}
+header .mobile-menu .btn-cta-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+    header .mobile-menu.above-footer-cta{
+        display: flex;
+    }
+    header .mobile-menu .above-footer-cta{
+        gap: 16px;
+        margin-top: auto;
+        box-sizing: border-box;
+        width: 100%;
+        align-items: center;
+    }
+    header .mobile-menu .above-footer-cta button{
+        padding: 11px 30px;
+    }
+    header .mobile-menu .above-footer-cta button, header .mobile-menu .above-footer-cta button:last-child{
+        width: 100%;
+        max-width: 335px;
+        box-sizing: border-box;
+        padding: 6px 0px;
+    }
+    /* section.container .above-footer-cta button:first-child{
+        padding: 5px 0px;
+        box-sizing: border-box;
+    } */
+    header .mobile-menu .above-footer-cta button:first-child a{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    header .mobile-menu .above-footer-cta button:last-child{
+        background-color: rgba(174, 142, 87, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    header .mobile-menu   button:last-child a{
+        display: inline-flex;
+        align-items: center;
+        gap: 30px;
+    }
+    header .mobile-menu  .above-footer-cta button:first-child span:first-child{
+        font-size: 14px;
+        height: 28px;
+        display: inline-flex;
+        align-items: center;
+    }
+    header .mobile-menu .above-footer-cta button:first-child span:last-child{
+        font-size: 26px;
+        letter-spacing: 6%;
+        height: 52px;
+        display: inline-flex;
+        align-items: center;
+    }
+    header .mobile-menu .above-footer-cta button:last-child span:last-child {
+        font-size: 20px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        color: var(--white);
+    }
+header .mobile-menu .above-footer-cta button:last-child span:first-child{
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    color: var(--white);
+    font-size: 12px;
+    line-height: 24px;
+}
+
+header .mobile-menu .above-footer-cta button, header .mobile-menu .above-footer-cta button:last-child {
+    width: 100%;
+    max-width: 335px;
+}
+
+@media (max-width: 360px){
+    header .mobile-menu .above-footer-cta button:first-child span:last-child {
+        font-size: 18px;
+    }
+    header .mobile-menu .above-footer-cta button:last-child a {
+        gap: 10px;
+    }   
+    header .mobile-menu .above-footer-cta button:last-child span:first-child {
+        padding: 2px 14px;
+    }   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header responsiveness styles */
+@media (max-width: 1400px){
+    header a.logo .h1 {
+        font-size: 20px;
+    }
+    header menu nav{
+        gap: 18px
+    }
+    header menu nav li{
+        font-size: 16px;
+    }
+    header .language-toggle span{
+        font-size: 10px;
+    }
+    header a.logo {
+        margin-right: 27px;
+    }
+}
+@media (max-width: 1280px){
+    header menu nav li a{
+        font-size: 18px;
+    }
+}
+/* @media (max-width: 1250px){
+    header .boxed-width {
+    padding-left: 33px;
+    }
+} */
+@media (max-width: 1200px){
+    header menu nav li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 1150px){
+    header menu nav li a{
+        font-size: 14px;
+    }
+}
+@media (max-width: 1100px){
+    header{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    header .boxed-width {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    header figure.hamburger-nav-icon{
+        display: inline-flex;
+    }
+    header menu, header .language-toggle, header button.btn-cta{
+        display: none;
+    }
+    header .breadcrumbs-text {
+        display: none
+    }
+    header a.logo .h1 {
+    font-size: 18px;
+}
+}
+@media (max-width: 350px){
+    header a.logo .h1 {
+    font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for index page */
+
+
+ .mobile-menu{
+    /* position: absolute; */
+    position: fixed;
+    width: 100%;
+    height: 100vh;;
+    /* min-height: 1 */
+    top: 0;
+    background-image: url('/assets/media/rustled-pape-white.webp');
+    background-repeat: repeat;
+    background-size: 100%;
+    padding-top: 24px;
+    box-sizing: border-box;
+    transition: .4s ease-out 0s;
+    
+}
+ .mobile-menu .menu-wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    padding-bottom: 60px;
+}
+ .mobile-menu.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: .4s ease-in 0s ;
+}
+ .mobile-menu.is-visible{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: .4s ease-out 0s ;
+    z-index: 50;
+}
+
+ .mobile-menu .col-1,  .mobile-menu .col-2,  .mobile-menu .col-3{
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+}
+ .mobile-menu .col-1{
+    justify-content: space-between;
+    padding: 0px 9px 0px 16px;
+    box-sizing: border-box;
+    gap: 17px;
+    margin-bottom: 28px;
+}
+ .mobile-menu div.logo {
+    margin: 0px;
+    margin-right: auto;
+    gap: 20px;
+}
+ .mobile-menu div.logo figure{
+    width: 43px;
+    height: 43px;
+}
+ .mobile-menu .col-1 svg{
+    left: 15px;
+    /* padding: 5px 0px 0px 30px; */
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    width: 21px;
+    height: 21px;
+    transition: transform .3s ease 0s;
+}
+ .mobile-menu.is-hidden .col-1 svg{
+    transform: rotate(180deg);
+    transition: transform .3s ease 0s;
+}
+
+ .mobile-menu .col-2 {
+    display: block;
+    margin-bottom: 35px;
+}
+ .mobile-menu .col-2,  .mobile-menu .col-2 nav{
+    width: 100%;
+}
+ .mobile-menu .col-2 nav{
+    gap: 10px;
+}
+ .mobile-menu .col-2 li{
+    width: 100%;
+    border-bottom: 1px solid rgba(217, 217, 217, 1);
+    padding-bottom: 18px;
+    padding-left: 16px;
+    box-sizing: border-box;
+}
+ .mobile-menu .col-2 li a{
+    line-height: 32px;;
+}
+ .mobile-menu .col-2 nav .language-toggle{
+    align-items: center;
+    display: flex;
+}
+ .mobile-menu .col-2 nav .language-toggle span{
+    font-size: 16px;
+    line-height: 32px;
+}
+ .mobile-menu .col-2 nav .language-toggle figure{
+    width: 20px;
+    height: 20px;
+    opacity: .4;
+}
+ .mobile-menu .btn-cta-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+     .mobile-menu.above-footer-cta{
+        display: flex;
+    }
+     .mobile-menu .above-footer-cta{
+        gap: 16px;
+        margin-top: auto;
+        box-sizing: border-box;
+        width: 100%;
+        align-items: center;
+    }
+     .mobile-menu .above-footer-cta button{
+        padding: 11px 30px;
+    }
+     .mobile-menu .above-footer-cta button,  .mobile-menu .above-footer-cta button:last-child{
+        width: 100%;
+        max-width: 335px;
+        box-sizing: border-box;
+        padding: 6px 0px;
+    }
+    /* section.container .above-footer-cta button:first-child{
+        padding: 5px 0px;
+        box-sizing: border-box;
+    } */
+     .mobile-menu .above-footer-cta button:first-child a{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+     .mobile-menu .above-footer-cta button:last-child{
+        background-color: rgba(174, 142, 87, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+     .mobile-menu   button:last-child a{
+        display: inline-flex;
+        align-items: center;
+        gap: 30px;
+    }
+     .mobile-menu  .above-footer-cta button:first-child span:first-child{
+        font-size: 14px;
+        height: 28px;
+        display: inline-flex;
+        align-items: center;
+    }
+     .mobile-menu .above-footer-cta button:first-child span:last-child{
+        font-size: 26px;
+        letter-spacing: 6%;
+        height: 52px;
+        display: inline-flex;
+        align-items: center;
+    }
+     .mobile-menu .above-footer-cta button:last-child span:last-child {
+        font-size: 20px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        color: var(--white);
+    }
+ .mobile-menu .above-footer-cta button:last-child span:first-child{
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    color: var(--white);
+    font-size: 12px;
+    line-height: 24px;
+}
+
+ .mobile-menu .above-footer-cta button,  .mobile-menu .above-footer-cta button:last-child {
+    width: 100%;
+    max-width: 335px;
+}
+
+@media (max-width: 360px){
+     .mobile-menu .above-footer-cta button:first-child span:last-child {
+        font-size: 18px;
+    }
+     .mobile-menu .above-footer-cta button:last-child a {
+        gap: 10px;
+    }   
+     .mobile-menu .above-footer-cta button:last-child span:first-child {
+        padding: 2px 14px;
+    }   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  responsiveness styles */
+@media (max-width: 1400px){
+     div.logo .h1 {
+        font-size: 20px;
+    }
+     menu nav{
+        gap: 18px
+    }
+     menu nav li{
+        font-size: 16px;
+    }
+     .language-toggle span{
+        font-size: 10px;
+    }
+     div.logo {
+        margin-right: 27px;
+    }
+}
+@media (max-width: 1250px){
+     .boxed-width {
+    padding-left: 33px;
+    }
+}
+@media (max-width: 1200px){
+     menu nav li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 1100px){
+    div.mobile-men{
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+     div.mobile-men{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+     figure.hamburger-nav-icon{
+        display: inline-flex;
+    }
+     /* menu,  .language-toggle,  button.btn-cta{
+        display: none;
+    } */
+     .breadcrumbs-text {
+        display: none
+    }
+     div.logo .h1 {
+    font-size: 18px;
+    }
+
+    section.hero  .language-toggle menu, section.hero  .language-toggle > :nth-child(3), section.hero  .language-toggle span{
+    display: none;
+    }
+    section.hero  .language-toggle{
+    justify-content: space-between;
+    padding: 15px  20px;
+    /* padding-bottom: 10px; */
+    }
+}
+@media (max-width: 350px){
+     div.logo .h1 {
+    font-size: 14px;
+    }
+}

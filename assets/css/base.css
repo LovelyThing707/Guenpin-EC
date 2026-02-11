@@ -1,0 +1,997 @@
+/* Base styles */
+
+/* Variables block */
+:root{
+    /* Layouts */
+    --full-width: 1440px;
+    /* --boxed-width: 1280px; */
+
+    /* Colors */
+    --white: #ffffff;
+    --black: #000000;
+    --primary-brown: #AE8E57;
+    --primary-darkred: #452226;
+    --default-text: #444444;
+
+
+    /* Breakpoints */
+    --mobile: 440px;
+    --tablet: 1100px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body, main{
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    font-family: 'Shippori Mincho';
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    padding-top: 153px;
+}
+body{
+    background-image: url('/assets/media/rustled-pape-brown.webp');
+    background-repeat: repeat;
+    background-size: 100%;
+    position: relative;
+    overflow: auto;
+}
+body.no-scroll{
+    overflow: hidden;
+}
+header, footer, section.container{
+    width: 100%;
+    height: fit-content;
+    margin: 0px auto;
+    box-sizing: border-box;
+    
+}
+section .boxed-width, header .boxed-width, footer .boxed-width{
+    width: 100%;
+    max-width: var(--full-width);
+    height: fit-content;
+    margin: 0px auto;
+    
+}
+figcaption{
+    display: none;
+}
+
+/* Utility clases  */
+.flx-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.flx-col{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Viewport Paddings */
+section.container div.boxed-width ,footer.container div.boxed-width, section.hero .hero-foreground{
+    padding: 0px 80px;
+    box-sizing: border-box;
+}
+@media (max-width: 1100px){
+    section.container div.boxed-width ,footer.container div.boxed-width, section.hero .hero-foreground{
+    padding: 0px 30px;
+    box-sizing: border-box;
+    }
+}
+@media (max-width: 440px){
+    section.container div.boxed-width ,footer.container div.boxed-width, section.hero .hero-foreground{
+    padding: 0px 20px;
+    box-sizing: border-box;
+    }
+}
+
+/* <<<------------------------- Texts and font styles starts----------------------------->>>*/
+
+h1,h2,h3,h4,h5,h6,span,p,a,li{
+    color: var(--default-text)
+}
+
+h1, .h1{
+    line-height: 100%;
+    font-weight: 400;
+    font-size: 40px;
+    text-decoration: none;
+    letter-spacing: 0%;
+    text-align: center;
+}
+h2, .h2{
+    line-height: 100%;
+    font-weight:400;
+    font-size: 28px;
+    text-decoration: none;
+    letter-spacing: 0%;
+    text-align: center;
+}
+h3, .h3{
+    line-height: 100%;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: none;
+    letter-spacing: 0%;
+    text-align: center;
+}
+h4, .h4{
+    line-height: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 0%;
+    text-align: center;
+}
+span{
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: normal;
+    text-align: center;
+    font-family: 'Shippori Mincho';
+}
+p{
+    line-height: 32px;
+}
+ul, menu{
+    list-style: none;
+    margin: unset;
+    padding: unset;
+}
+figure{
+    margin: unset;
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+}
+li, a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.vertical{
+    line-height: 48px;
+    font-weight: 400;
+    font-size: 40px;
+    text-decoration: none;
+    letter-spacing: 8px;
+    text-align: center;
+    writing-mode: tb;
+    text-orientation: upright;
+    -webkit-text-orientation: upright;
+    margin: 0px;
+    
+}
+.vertical-20{
+    line-height: 48px;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 8px;
+    text-align: center;
+    writing-mode: tb;
+    text-orientation: upright;
+    margin: 0px;
+}
+.vertical-16{
+    line-height: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 8px;
+    text-align: center;
+    writing-mode: tb;
+    text-orientation: upright;
+    margin: 0px;
+}
+.vertical-14{
+    line-height: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 8px;
+    text-align: center;
+    writing-mode: tb;
+    text-orientation: upright;
+    margin: 0px;
+}
+small.md{
+    font-size: 20px;
+}
+small.sm{
+    font-size: 16px;
+}
+small.xs{
+    font-size: 14px;
+}
+small.xxs{
+    font-size: 12px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* Text responsive styles */
+
+@media (max-width: 1100px){
+ h2{
+    line-height: 100%;
+    font-weight: 400;
+    font-size: 25px;
+    text-decoration: none;
+    margin: 0px
+}
+h3{
+    line-height: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0px
+}
+h4, .h4{
+    line-height: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0px
+}
+span, .bold{
+    line-height: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+span, .base-text{
+    line-height: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none; 
+}
+li, a{
+    text-decoration: none;
+    font-size: 16px;
+}
+.vertical{
+    line-height: 38px;
+    font-size: 30px;
+}
+.vertical-20{
+    line-height: 17px;
+    font-size: 14px;
+}
+.vertical-16{
+    line-height: 17px;
+    font-size: 12x;
+    }
+    small.md{
+    font-size: 16px !important;
+    }
+small.sm{
+    font-size: 14px !important;
+}
+small.xs{
+    font-size: 12px !important;
+}
+small.xxs{
+    font-size: 10px !important;
+}
+}
+
+/* <<<------------------------- Texts and font styles stops ----------------------------->>>*/
+
+
+
+/* Font family blocks */
+@font-face {
+    font-family: Shippori Mincho;
+    src: url('/assets//font/shippori-mincho.woff2') format('woff2');
+    font-style: regular;
+    font-weight: 400;
+}
+
+
+
+/* Primary button styles here  */
+button.btn-cta, .btn-cta{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-brown);
+    border-radius: 9px;
+    padding: 0px;
+    border: 0px
+}
+button.btn-cta a{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--white)
+}
+
+
+button.btn-light, .btn-light{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 9px;
+    padding: 0px;
+    border: 1px solid var(--black)
+}
+button.btn-light a{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--black)
+}
+@media(max-width: 1100px){
+    .above-footer-cta{
+        width: 100%;
+        max-width: 350px !important;
+    }
+    button.primary-btn{
+        height: 60px;
+    }
+    .above-footer-cta h3{
+        font-size: 16px !important;
+    }
+    button.primary-btn a{
+        font-size: 18px !important;
+    }
+    button.primary-btn svg{
+        width: 12px;
+        height: 12px;
+    }
+}
+@media(max-width: 340px){
+     button.primary-btn a{
+        font-size: 14px;
+    }
+
+}
+
+
+/* Intro component */
+
+section.intro{
+    width: 100%;
+    min-height: 260px;
+    height: auto;
+    margin-bottom: 94px;
+    padding-top: 91px;
+}
+section.intro .boxed-width{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+section.intro .page-details{
+    /* margin-bottom: 78px; */
+    align-items: center;
+}
+section.intro .page-details h1{
+    font-size: 24px;
+    /* display: inline-flex; */
+    align-items: center;
+    line-height: 48px;
+    margin: 0px;
+    width: fit-content;
+}
+section.intro .page-details h3{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 80px;
+    width: fit-content;
+    margin: 0px;
+}
+section.intro .tabs-wrapper{
+    width: 100%;
+    height: 100%;
+    margin-top: 78px;
+}
+section.intro .tabs-wrapper ul{
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 16px;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+/* section.intro .tabs-wrapper ul li{
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    border-radius: 4px;
+    cursor: pointer
+} */
+section.intro .tabs-wrapper ul a{
+    width: 100%;
+    line-height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    border-radius: 4px;
+    cursor: pointer;
+    /* letter-spacing: 2px;/ */
+}
+
+/* section.intro .tabs-wrapper ul li::before{
+    content: '＞';
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    display: flex;
+    position: absolute;
+    left: 15px;
+    align-items: center;
+    justify-content: center;
+    color: var(--default-text);
+    border: 1px solid rgba(68, 68, 68, 1);
+    border-radius: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    transform: rotate(90deg);
+} */
+section.intro .tabs-wrapper ul a::before{
+    content: '＞';
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    display: flex;
+    position: absolute;
+    left: 15px;
+    align-items: center;
+    justify-content: center;
+    color: var(--default-text);
+    border: 1px solid rgba(68, 68, 68, 1);
+    border-radius: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+/* Intro component responsiveness styles */
+@media (max-width: 1100px){
+
+    section.intro .page-details h1 {
+        font-size: 16px;
+        align-items: center;
+        line-height: 32px;
+    }
+    section.intro .page-details h3 {
+        font-size: 24px;
+        line-height: 48px;
+    }
+    section.intro .tabs-wrapper ul {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 8px;
+        row-gap: 6px;
+    }
+    section.intro .tabs-wrapper ul li::before {
+    display: none;
+    }
+    section.intro {
+        padding-top: 40px;
+        margin-bottom: 25px;
+        min-height: unset;
+    }
+    section.intro .tabs-wrapper {
+    margin-top: 12px;
+    }
+    
+}
+@media (max-width: 800px){
+    section.intro .tabs-wrapper ul li {
+        font-size: 14px;
+        text-align: center;
+    }
+    section.intro .tabs-wrapper ul a{
+        font-size: 14px;
+        text-align: center;
+       
+    }
+    section.intro .tabs-wrapper ul a::before{
+        display: none;
+    }
+}
+
+
+/* Reservations sections */
+section.reservations.container{
+    padding-top: 60px;
+    padding-bottom: 67px;
+    
+    background-image: url('/assets/media/rustled-pape-white.webp');
+    background-repeat: repeat;
+    background-size: 100%;
+}
+section.reservations.container .boxed-width{
+    justify-content: space-between;
+    align-items: start;
+}
+section.reservations.container .boxed-width .heading{
+    margin-right: 20px;
+}
+section.reservations .reservation-cards{
+    margin-right: 67px;
+}
+section.reservations .card{
+    width: 545px;
+    height: 300px;
+    flex-shrink: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    border: 1px solid rgba(217, 217, 217, 1)
+}
+section.reservations .card:first-child h3{
+    height: 48px;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+section.reservations .card:first-child span a{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    font-size: 40px;
+}
+
+section.reservations .card:last-child{
+    background-color: var(--primary-brown);
+    justify-content: center;
+}
+section.reservations .card:last-child h3{
+    font-size: 14px;
+    padding: 2px;
+    width: 193px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    margin: 0px;
+}
+section.reservations .card:last-child span{
+    color: var(--white);
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+/* Reservations responsiveness styles */
+
+@media (max-width: 1100px){
+    section.reservations .reservation-cards{
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        margin-right: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer styles  */
+footer{
+    box-sizing: border-box;
+    width: 100%;
+    /* height: 572px; */
+    
+    background-color: rgba(69, 34, 38, 1);
+    /* justify-content: end; */
+}
+/* footer .wrapper{
+
+} */
+ footer .col-1{
+    height: fit-content;
+    box-sizing: border-box;
+    gap: 58px;
+    justify-content: end;
+    align-items: start;
+ }
+  footer .wrapper{
+    margin-top: 83px;
+    margin-bottom: 60px;
+  }
+footer .col-1 .logo-footer{
+    width: fit-content;
+    height: fit-content;
+}
+footer .col-1 .logo-footer img{
+    width: 133px;
+    height: 137px;
+    object-fit: contain;
+}
+footer .col-1 .logo-footer h4{
+    color: var(--white);
+    margin: 0px;
+    line-height: 40px;
+}
+footer .col-1, footer .col-2{
+    box-sizing: border-box;
+    /* width: 100%; */
+    height: fit-content;
+}
+footer .col-2{
+    margin: 94px 0px 0px 0px;
+}
+footer .icons-list{
+    width: fit-content;
+    gap: 22px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer .icons-list figure{
+    width: fit-content;
+    height: fit-content;
+}
+footer .icons-list figure:nth-child(5) img{
+    filter: saturate(0);
+}
+
+footer .footer-nav-links{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 16px;
+}
+footer .footer-nav-links ul:first-child{
+   justify-content: end;
+}
+footer .icons-list figure img{
+    width: 32px;
+    height: 32px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+footer .col-1 nav ul{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    gap: 16px;
+}
+footer .col-1 nav a{
+    color: var(--white);
+    writing-mode: tb;
+    text-orientation: upright;
+}
+footer .nav-container ul:first-child a{
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 3px;
+}
+
+footer .nav-container ul:first-child{
+    margin-bottom: 49px;
+}
+footer .nav-container:first-child ul{
+    margin-bottom: -2px
+}
+footer .nav-container:first-child ul a:first-child, footer .nav-container:nth-child(5) ul a{
+    margin-top: -9px
+}
+footer .nav-container:nth-child(1) ul:first-child a:first-child, footer .nav-container:nth-child(5) ul a{
+    font-size: 24px
+}
+footer .nav-container:nth-child(5){
+    margin: 0px 57px;
+}
+footer .nav-container ul:last-child a{
+    line-height: 20px;
+    letter-spacing: 3px;
+}
+
+/* Footer responsivenes styles */
+
+@media (max-width: 1100px){
+    footer .col-1 .logo-footer h4{
+        font-size: 16px;
+    }
+    footer .col-1 .logo-footer img{
+        width: 75px;
+        height: 87px;
+    }
+    footer.container .wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-top: 18px;
+        margin-bottom: 39px;
+    }
+    footer .col-2{
+        margin-top: 53px;
+    }
+    footer .col-1 .logo-footer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    footer .footer-nav-links {
+        flex-direction: column;
+        width: 100%;
+        max-width: 500px;
+    }
+    footer .col-1 nav a {
+        color: var(--white);
+        writing-mode: unset;
+        text-orientation: unset;
+    }
+    footer .col-1 nav ul{
+        gap: 5px;
+    }
+    footer .footer-nav-links .nav-container{
+        display: grid;
+        grid-template-columns: 130px 1fr;
+    }
+    footer .nav-container ul:first-child{
+        display: grid;
+        /* grid-template-columns: 200px; */
+    }
+    footer .nav-container:nth-child(5),footer .footer-nav-links .nav-container:last-child{
+        margin: unset;
+        grid-template-columns: 140px 1fr;
+    }
+    footer .nav-container ul:first-child a{
+        height: fit-content;
+    }
+    footer .footer-nav-links ul:first-child{
+        justify-content: start;
+    }
+    footer .nav-container:first-child ul a:first-child{
+        font-size: 16px;
+        margin-top: unset;
+        align-self: end;
+    }
+    footer .nav-container:first-child ul{
+        gap: 16px;
+    }
+    footer .footer-nav-links {
+        gap: 44px;
+        align-self: center;
+    }   
+    footer .footer-nav-links .nav-container:last-child{
+        margin-top: -29px;
+    } 
+    footer .nav-container:nth-child(1) ul:first-child a:first-child, footer .nav-container:nth-child(5) ul a{
+        margin: unset;
+        font-size: 18px;
+    }
+    footer .nav-container ul:first-child {
+        margin-bottom: 0px;
+    }
+    footer .nav-container ul:last-child{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    footer .col-1{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    footer .col-2{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1300px){
+    section.reservations .card{
+        width: 445px;
+        height: 250px;
+        flex-shrink: 1;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        border: 1px solid rgba(217, 217, 217, 1)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Above Footer cta responsiveness styles */
+section.container .above-footer-cta{
+    display: none;
+}
+@media (max-width: 1100px){
+
+    section.reservations.container .vertical {
+        font-size: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+        writing-mode: unset;
+        text-orientation: unset;
+        margin-bottom: 10px;
+    }
+    section.reservations.container .boxed-width{
+        flex-direction: column;
+        align-items: center;
+    }
+    section.reservations .reservation-cards{
+        display: none;
+    }
+    section.container .above-footer-cta{
+        display: flex;
+    }
+    section.store-info.container .boxed-width{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px
+    }
+    section.container .above-footer-cta{
+        gap: 16px;
+        margin-top: auto;
+        box-sizing: border-box;
+        width: 100%;
+        align-items: center;
+    }
+    section.container .above-footer-cta button{
+        padding: 11px 30px;
+    }
+    section.container .above-footer-cta button, section.container .above-footer-cta button:last-child{
+        width: 100%;
+        max-width: 335px;
+        box-sizing: border-box;
+        padding: 6px 0px;
+    }
+    section.container.above-footer-cta button:first-child{
+        padding: 5px 0px;
+        box-sizing: border-box;
+    }
+    section.container .above-footer-cta button:first-child a{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    section.container .above-footer-cta button:last-child{
+        background-color: rgba(174, 142, 87, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    section.container   button:last-child a{
+        display: inline-flex;
+        align-items: center;
+        gap: 30px;
+    }
+    section.container  .above-footer-cta button:first-child span:first-child{
+        font-size: 14px;
+        height: 28px;
+        display: inline-flex;
+        align-items: center;
+    }
+    section.container .above-footer-cta button:first-child span:last-child{
+
+        font-size: 26px;
+        letter-spacing: 6%;
+        height: 52px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    section.container.above-footer-cta button:last-child span:first-child{
+        font-size: 14px;
+        height: 28px;
+        display: inline-flex;
+        align-items: center;
+        border: 1px solid var(--white);
+        padding: 2px 22px;
+        border-radius: 7px;
+        color: var(--white)
+    }
+    section.container.above-footer-cta button:last-child span:last-child{
+        font-size: 20px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        color: var(--white)
+    }
+    section.container .above-footer-cta button:last-child span:first-child {
+        font-size: 14px;
+        height: 28px;
+        display: inline-flex;
+        align-items: center;
+        border: 1px solid var(--white);
+        padding: 2px 22px;
+        border-radius: 7px;
+        color: var(--white);
+    }
+    section.container .above-footer-cta button:last-child span:last-child {
+        font-size: 20px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        color: var(--white);
+    }
+}
+@media (max-width: 360px){
+    section.container .above-footer-cta button:first-child span:last-child{
+        font-size: 18px;
+    }
+    section.container   button:last-child a{
+        gap: 15px
+    }
+}
+
+
+.smart-nav{
+    
+    padding: 10px;
+    padding-top: 30px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* display: none; */
+}
+
+.smart-nav .edge{
+    position: absolute;
+    top: 0;
+    font-size: 12px;
+    right: 0;
+    background-color: lightcoral;
+    border-radius: 10px;
+}
+
+.smart-nav.right{
+    right: 0
+}
+.smart-nav a{
+    font-size: 14px;
+}

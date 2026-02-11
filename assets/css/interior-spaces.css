@@ -1,0 +1,160 @@
+section.spaces{
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    margin-bottom: 100px; 
+    
+}
+section.spaces .boxed-width{
+    row-gap: 70px;
+    /* margin-bottom: 166px; */
+}
+
+section.spaces .space .heading{
+    padding-right: 20px;
+    margin-top: -30px;
+    margin-right: auto;
+}
+section.spaces .space{
+    align-items: start;
+    justify-content: end;
+}
+section.spaces .spaces-wrapper{
+    width: 100%;
+    max-width: 1156px;
+    align-items: start;
+}
+section.spaces .spaces-wrapper .spaces-name h2{
+    margin: 0px;
+    margin-bottom: 7px;
+    line-height: 50px;
+    display: inline-flex;
+}
+
+section.spaces .spaces-wrapper .space-gallery{
+    width: 100%;
+    column-gap: 58px;
+}
+section.spaces .spaces-wrapper .space-gallery.grid-col-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 18px 24px 0px 18px;
+    background-color: var(--white);
+    border-radius: 4px;
+}
+section.spaces .spaces-wrapper .space-gallery.grid-col-3{
+    gap: 25px;
+    box-sizing: border-box;
+}
+section.spaces .spaces-wrapper .space-gallery.grid-col-3 figure{
+    padding: unset;
+}
+section.spaces .spaces-wrapper .space-gallery.grid-col-3 figure h4{
+    width: 100%;
+    line-height: 50px;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0px 5px 0px;
+}
+section.spaces .col-2 figure{
+    width: fit-content;
+    height: fit-content;
+    object-fit: cover;
+    padding: 20px 20px 0px;
+    background-color: var(--white);
+    box-sizing: content-box;
+    border-radius: 4px;
+}
+section.spaces .col-2 figure img{
+    width: 100%;
+    height: 100%;
+    max-width: 519px;
+    max-height: 359px;
+    object-fit: cover;
+}
+section.spaces .col-2 figure h4{
+    line-height: 24px;
+    margin: 18px 0px 21px 0px;
+}
+
+
+@media (max-width: 1100px){
+    section.spaces .spaces-wrapper .space-gallery {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+    section.spaces .col-2 figure {
+        padding: 10px 11px 10px 11px;
+    }
+    section.spaces .boxed-width {
+        flex-direction: column;
+        gap: 20px
+    }
+    section.spaces .space {
+        align-items: start;
+        justify-content: end;
+        flex-direction: column;
+    }
+    section.spaces .space > .heading {
+        margin: 0px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    section.spaces .spaces-wrapper .space-gallery.grid-col-3,     section.spaces .spaces-wrapper .space-gallery {
+        max-width: 700px;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px 11px 10px 11px;
+        background-color: var(--white);
+        border-radius: 4px;
+        gap: 0px;
+        box-sizing: border-box;
+    }  
+    section.spaces .spaces-wrapper {
+        align-items: center;
+    }
+    section.spaces .spaces-wrapper .space-gallery.grid-col-3 figure, section.spaces .col-2 figure {
+        padding: unset;
+        width: 100%;
+    }
+    section.spaces .col-2 figure img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+    section.spaces .spaces-wrapper .space-gallery.grid-col-3 figure h4 {
+        width: 100%;
+        line-height: 34px;
+        margin: 10px 0px 10px 0px;
+        font-size: 16px;
+    }
+    section.spaces .spaces-wrapper {
+        width: 100%;
+        /* align-items: start; */
+    }
+    section.spaces .space > .heading{
+        margin-bottom: 20px;
+        
+    }
+    section.spaces .space:nth-child(2) > .heading{
+        min-height: 110px
+    }
+    section.spaces .space > .heading h1{
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+    section.spaces .spaces-wrapper .spaces-name {
+        width: 100%;
+        justify-content: start;
+    }
+    
+    section.spaces .spaces-wrapper .spaces-name h2 {
+        font-size: 20px;
+        line-height: 40px;
+        display: inline-flex;
+    }
+    
+}

@@ -1,0 +1,157 @@
+section.drinks .boxed-width{
+    row-gap: 59px;
+    margin-bottom: 194px;
+}
+section.drinks .dish-grp{
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    align-items: start;
+    justify-content: end;
+}
+section.drinks .dish-grp .heading{
+    height: fit-content;
+    margin-right: auto;
+}
+section.drinks .dish-grp .heading h1{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+    margin-right: 20px;
+}
+
+section.drinks .dishes-wrapper{
+    width: fit-content;
+    height: auto;
+    padding: 29px 50px 41px 37px;
+    background-color: var(--white);
+    box-sizing: border-box;
+}
+section.drinks .dishes-wrapper{
+    width: 100%;
+    max-width: 1156px;
+   
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 49px;
+    row-gap: 30px;
+}
+section.drinks .dishes-wrapper.grid-col-2{
+     display: grid;
+}
+section.drinks .outer-wrapper{
+    width: 100%;
+    max-width: 1156px;
+    align-items: end;
+}
+section.drinks .outer-wrapper .course-meal-name{
+    margin-right: auto;
+}
+section.drinks .dishes-wrapper.grid-col-2 .inner-wrapper{
+    gap: 17px;
+}
+section.drinks .dish{
+    width: 100%;
+    height: fit-content;
+    gap: 18px;
+    align-items: start;
+}
+
+section.drinks .dish.double{
+    gap: 49px;
+}
+section.drinks .dish.double .dish-col-wrapper{
+    gap: 18px;
+    align-items: start;
+    
+}
+section.drinks .dish.double .dish-col-wrapper .details{
+    max-width: 292px;
+}
+section.drinks .dish figure{
+    width: fit-content;
+    height: fit-content;
+}
+section.drinks .dish figure{
+    width: 200px;
+    height: 150px;
+    aspect-ratio: 2/1.5;
+}
+section.drinks .dish .details{
+    width: 100%;
+    /* max-width: 292px; */
+}
+section.drinks .dish h3.name{
+    margin: 0px;
+    width: fit-content;
+    text-align: start;
+    line-height: 47px;
+    margin-bottom: 6px
+}
+section.drinks .dish p.description{
+    margin: 0px;
+    width: fit-content;
+    text-align: start;
+}
+section.drinks .dish span.price{
+    line-height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+/* drinks responsivenes styles */
+
+@media (max-width: 1100px){
+    section.drinks .dish-grp:nth-child(n+4){
+        display: none;
+    }
+    section.drinks .dish-grp {
+        flex-direction: column;
+        align-items: center;
+    }
+    section.drinks .dish-grp .heading {
+        margin-right: unset;
+        height: fit-content;
+    }
+    section.drinks .dish-grp .heading .vertical {
+        min-height: 92px;
+        font-size: 24px;
+        width: unset;
+        padding-bottom: 18px;
+        margin-bottom: 24px;
+        margin-top: 40px;
+    }
+    section.drinks .boxed-width {
+        row-gap: 0px;
+        margin-bottom: 100px;
+    }
+    section.drinks .dishes-wrapper {
+        padding: 10px 11px 10px 10px;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+    section.drinks .dishes-wrapper.grid-col-2 figure{
+        width: 100%;
+        height: 100%;
+    }
+    section.drinks .dish h3.name {
+        margin: 0px;
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 2px;
+    }
+    section.drinks .dish p.description {
+        font-size: 12px;
+        line-height: 17px;
+    }
+    section.drinks .dish span.price {
+        height: 26px;
+        font-size: 14px;
+        margin-top: 2px
+    }
+    section.drinks .dishes-wrapper.grid-col-2 .inner-wrapper {
+        gap: 10px;
+    }
+}

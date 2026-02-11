@@ -1,0 +1,151 @@
+section.store-details .boxed-width{
+    row-gap: 59px;
+    margin-bottom: 88px;
+}
+section.store-details .dish-grp{
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    align-items: start;
+    justify-content: end;
+}
+section.store-details .dish-grp .heading{
+    height: fit-content;
+    margin-right: auto;
+    padding-right: 20px
+}
+section.store-details .dish-grp .heading h1{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+section.store-details .dishes-wrapper{
+    width: fit-content;
+    height: auto;
+    padding: 29px 50px 41px 37px;
+    background-color: var(--white);
+    box-sizing: border-box;
+}
+section.store-details .dishes-wrapper{
+    width: 100%;
+    max-width: 1156px;
+   
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 49px;
+    row-gap: 30px;
+}
+section.store-details .dishes-wrapper.grid-col-2{
+     display: grid;
+}
+section.store-details .dish{
+    width: 100%;
+    height: fit-content;
+    gap: 18px;
+    align-items: start;
+}
+
+
+section.store-details .dish.double{
+    gap: 49px;
+}
+section.store-details .dish.double .dish-col-wrapper{
+    gap: 18px;
+    align-items: start;
+    
+}
+section.store-details .dish.double .dish-col-wrapper .details{
+    max-width: 292px;
+}
+section.store-details .dish figure{
+    width: fit-content;
+    height: fit-content;
+}
+section.store-details .dish figure{
+    width: 200px;
+    height: 150px;
+    aspect-ratio: 2/1.5;
+}
+section.store-details .dish .details{
+    width: 100%;
+    /* max-width: 292px; */
+}
+section.store-details .dish h3.name{
+    margin: 0px;
+    width: fit-content;
+    text-align: start;
+    line-height: 47px;
+    margin-bottom: 6px
+}
+section.store-details .dish p.description{
+    margin: 0px;
+    width: fit-content;
+    text-align: start;
+}
+section.store-details .dish span.price{
+    line-height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: end;
+}
+
+/* Store detaisl responsiveness styles */
+@media (max-width: 1100px){
+    section.store-details .boxed-width {
+    row-gap: 0px;
+    margin-bottom: 88px;
+    }
+    section.store-details .dish-grp:nth-child(n+6) {
+        display: none
+    }
+    section.store-details .dishes-wrapper {
+        padding: 15px 11px 10px 10px;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+    section.store-details .dish-grp {
+        flex-direction: column;
+        align-items: center;
+    }
+    section.store-details .dish-grp .heading {
+        margin-right: unset;
+        height: fit-content;
+        
+    }
+    section.store-details .dish-grp .heading .vertical{
+        min-height: 92px;
+        font-size: 24px;
+        width: unset;
+        padding-bottom: 18px;
+        margin-bottom: 24px;
+        margin-top: 40px
+    }
+    section.store-details .dish h3.name {
+        line-height: 32px;
+        font-size: 16px;
+    }
+    section.store-details .dish .details {
+        height: 100%
+    }
+    section.store-details .dish span.price {
+        margin-top: auto;
+        line-height: 26px;
+        font-size: 14px;
+    }
+    section.store-details .dish {
+        height: 100%
+    }
+    section.store-details .dish p.description {
+    font-size: 12px;
+    }
+}
+@media (max-width: 800px){
+    section.store-details .dish figure {
+        width: 150px;
+        height: 100px;
+    }
+
+}
+
+
